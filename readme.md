@@ -16,6 +16,9 @@
         <!--修改字体颜色，大小，style....-->
         <item name="android:actionMenuTextAppearance">@style/actionMenuText</item>
 
+        <!--修改展示的按钮样式-->
+        <item name="actionButtonStyle">@style/ActionButtonStyle</item>
+        
         <!--资源替换-->
         <!--menu溢出情况下三个点图片替换-->
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.Menu</item>
@@ -31,6 +34,20 @@
         <item name="android:listSelector">@drawable/selector_common_bg</item>
         <item name="android:divider">@color/nb.divider.common</item>
         <item name="android:dividerHeight">0.5dp</item>
+    </style>
+ 
+    <!--设置action menu文字的显示样式，大小，加黑，颜色-->
+    <style name="actionMenuText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/paleGrey</item>
+    </style>
+    
+    <!--针对action menu按钮样式设置:21版本之后要使用paddingEnd,下面的效果是调整按钮之间的距离，包括只有一个action时距离屏幕右边的距离-->
+    <style name="ActionButtonStyle" parent="Widget.AppCompat.Light.ActionButton">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
     </style>
     </resources>
 ```
